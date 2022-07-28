@@ -6,7 +6,7 @@ export const TableContainer = styled.section`
   table {
     width: 100%;
     border-spacing: 0 .3rem;
-
+    
     th {
       color: var(--text-body);
       font-weight: 400;
@@ -14,8 +14,9 @@ export const TableContainer = styled.section`
       text-align: center;
       line-height: 1.5rem;
     }
-
+    
     td {
+      transition: .3s;
       padding: 1rem 2rem;
       text-align: center;
       border: 1px solid var(--bg-color);

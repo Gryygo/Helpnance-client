@@ -1,6 +1,6 @@
 import { FormEvent, useState } from "react";
 import Modal from "react-modal";
-import { FormContainer, TypeSubContainer, RadioBtn } from "./styles";
+import { FormContainer, TypeSubContainer, RadioBtn } from "../AddForm/styles";
 import closeIcon from "../../assets/close.svg";
 import { GiReceiveMoney, GiPayMoney } from "react-icons/gi";
 import { useTransactions } from "../../hooks/useTransactions";

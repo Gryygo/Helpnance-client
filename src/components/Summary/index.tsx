@@ -35,7 +35,7 @@ export const Summary = () => {
           <p>Income</p>
           <GiReceiveMoney className="icon" />
         </header>
-        {loading ? (
+        {!loading ? (
           <strong>
             {new Intl.NumberFormat("pt-BR", {
               style: "currency",
@@ -51,7 +51,7 @@ export const Summary = () => {
           <p>Total</p>
           <GiMoneyStack className="icon" />
         </header>
-        {loading ? (
+        {!loading ? (
           <strong>
             {new Intl.NumberFormat("pt-BR", {
               style: "currency",
@@ -67,7 +67,7 @@ export const Summary = () => {
           <p>Outcome</p>
           <GiPayMoney className="icon" />
         </header>
-        {loading ? (
+        {!loading ? (
           <strong>
             -
             {new Intl.NumberFormat("pt-BR", {

@@ -12,9 +12,10 @@ export const FormContainer = styled.form`
     width: 100%;
     padding: 0 1.5rem;
     height: 4rem;
+    color: var(--text-title);
     border-radius: 0.5rem;
-    background-color: #e7e9ee;
-    border: 1px solid #d7d7d7;
+    background-color: var(--box-color);
+    border: none;
     font-weight: 400;
     font-size: 1rem;
 
@@ -31,7 +32,7 @@ export const FormContainer = styled.form`
     width: 100%;
     padding: 0 1.5rem;
     height: 4rem;
-    color: var(--bg-color);
+    color: var(--text-title);
     background-color: var(--green);
     border-radius: 0.5rem;
     border: none;
@@ -60,14 +61,15 @@ interface RadioBtnProps {
 
 const colors = {
   green: "#33CC9c",
-  red: "#e52e4d",
+  red: "#ff8398",
 };
 
 export const RadioBtn = styled.button<RadioBtnProps>`
   background: ${(props) => (props.isPressed
-                            ? transparentize(.7, colors[props.pressedColor] )
+                            ? transparentize(.1, colors[props.pressedColor] )
                             : "transparent")};
   border: 1px solid #d7d7dd;
+  color: var(--text-title);
   border-radius: 0.5rem;
   height: 4rem;
   display: flex;
@@ -85,9 +87,5 @@ export const RadioBtn = styled.button<RadioBtnProps>`
   }
   .icon {
     font-size: 2.3rem;
-  }
-
-  &:hover {
-    border: 3px solid ${darken(0.1, "#d7d7dd")};
   }
 `;

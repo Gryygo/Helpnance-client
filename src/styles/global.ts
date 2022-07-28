@@ -1,27 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-    /* Dark mode */
-    /* :root {
-    --bg-color: #111;
-    --red: #ff8398;
-    --green: #33cc95;
-    --blue: #393655;
-    --blue-light: #20104f;
-    --text-title: #fff;
-    --text-body: #d7d7d9;
-    --box-color: #202020;
-    } */
-    :root {
-        --bg-color: #f0f2f5;
-        --red: #e52e4d;
-        --green: #33CC9c;
-        --blue-light: #00eaf7ff;
-        --blue: #003984ff;
-        --text-title: #363f5f;
-        --text-body: #969cb3;
-        --box-color: #FFFFFF;
-    }
 
     * {
         margin: 0;
@@ -39,8 +18,9 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: var(--bg-color);
         -webkit-font-smoothing: antialiased;
+        transition: background .3s;
     }
-
+    
     body, input, text-area, button {
         font-family: "Poppins", sans-serif;
         font-weight: 400;
@@ -63,6 +43,7 @@ export const GlobalStyle = createGlobalStyle`
         width: 100%;
         max-width: 576px;
         background: var(--bg-color);
+        /* border: .1rem solid var(--text-title); */
         padding: 3rem;
         position: relative;
         border-radius: .5rem;
@@ -92,5 +73,29 @@ export const GlobalStyle = createGlobalStyle`
         filter: invert(28%) sepia(45%) saturate(3648%) hue-rotate(330deg) brightness(91%) contrast(96%);
         }
     }
+`;
 
-`
+export const LightMode = createGlobalStyle`
+    :root {
+        --bg-color: #f0f2f5;
+        --red: #ff8398;
+        --green: #33CC9c;
+        --blue-light: #00eaf7ff;
+        --blue: #003984ff;
+        --text-title: #363f5f;
+        --text-body: #969cb3;
+        --box-color: #FFFFFF;
+    }
+`;
+export const DarkMode = createGlobalStyle`
+    :root {
+        --bg-color: #111;
+        --red: #ff8398;
+        --green: #33cc95;
+        --blue: #003984ff;
+        --blue-light: #00eaf7ff;
+        --text-title: #fff;
+        --text-body: #d7d7d9;
+        --box-color: #202020;
+    }
+`;

@@ -11,6 +11,7 @@ export const SummaryContainer = styled.section`
         padding: 1.5rem 2rem;
         border-radius: .25rem;
         color: var(--text-title);
+        transition: .3s;
         box-shadow: 0 .5rem 15px rgba(0, 0, 0, 0.1);
 
         header {

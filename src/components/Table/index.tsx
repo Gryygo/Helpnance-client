@@ -18,7 +18,7 @@ export const Table = () => {
             <th>Actions</th>
           </tr>
         </thead>
-        {loading ? (
+        {!loading ? (
           <tbody>
             {transactions.map((transaction) => {
               return (

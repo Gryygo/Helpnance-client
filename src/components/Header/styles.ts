@@ -16,6 +16,23 @@ export const ContentContainer = styled.div`
     /* border: 1px solid white; */
     width: 200px;
   }
+
+  .theme_toggle {
+    border-radius: 2rem;
+    width: 3.5rem;
+    padding: 0 0rem;
+    position: relative;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .theme_icon {
+      margin: 0 0.7rem;
+    }
+    }
+
+
   button {
     font-size: 1rem;
     color: var(--blue);
