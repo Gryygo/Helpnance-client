@@ -1,4 +1,4 @@
-# Hepnance
+# Helpnance
 <div align="center">
   <img src="https://github.com/Gryygo/Helpnance-client/blob/main/src/assets/helpnance_homepage.png" width="1000px" align="center" />
   <p></p>
